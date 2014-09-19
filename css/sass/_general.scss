@@ -16,7 +16,12 @@
 
  .container {
   margin: 0 auto;
-  width: 1080px;
+ }
+
+ .row {
+  width: 960px;
+  margin: 0 auto;
+  @extend %clearfix;
  }
 
  p {
@@ -24,6 +29,7 @@
  }
 
  header {
+  height: 63px;
   background-color: $header-background-color;
   h1, h2 { 
     color: $header-color; 
@@ -41,17 +47,48 @@
   }
   button {
     float: right;
-    margin: 20px 0;
+    margin: 10px 0; 
     @extend %clearfix;
   }
  }
 
+nav {
+  border-top: 1px solid $medium-gray;
+  border-bottom: 1px solid $medium-gray;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    float: left;
+    li {
+      display: inline-block;
+    }
+  }
+  button {
+    float: right;
+  }
+  @extend %clearfix;
+}
+
 button {
   font-size: 16px;
   font-weight: 300;
-  background: $button-background-color;
-  color: $button-color;
   text-transform: uppercase;
   border: 0;
   border-radius: 5px;
+  padding: 10px 20px;
+
+  &.orange {
+    background: $orange;
+    color: $white;
+  }
+
+  &.gray {
+    background: $dark-gray;
+    color: $white;
+  }
+
+  &.small {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
 }
