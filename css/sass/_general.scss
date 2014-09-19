@@ -1,0 +1,57 @@
+// General Styles
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+ 
+ body {
+  font-family: $base-font;
+  background-color: $body-background-color;
+  -webkit-font-smoothing: antialiased;
+ }
+
+ .container {
+  margin: 0 auto;
+  width: 1080px;
+ }
+
+ p {
+  font-weight: 400;
+ }
+
+ header {
+  background-color: $header-background-color;
+  h1, h2 { 
+    color: $header-color; 
+    display: inline-block;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+  h2 { 
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+
+  }
+  button {
+    float: right;
+    margin: 20px 0;
+    @extend %clearfix;
+  }
+ }
+
+button {
+  font-size: 16px;
+  font-weight: 300;
+  background: $button-background-color;
+  color: $button-color;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5px;
+}
