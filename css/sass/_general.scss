@@ -1,0 +1,111 @@
+// General Styles
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+ 
+ body {
+  font-family: $base-font;
+  background-color: $body-background-color;
+  -webkit-font-smoothing: antialiased;
+ }
+
+ .container {
+  margin: 0 auto;
+ }
+
+ .row {
+  width: 960px;
+  margin: 0 auto;
+  @extend %clearfix;
+ }
+
+ p {
+  font-weight: 400;
+ }
+
+ header {
+  height: em(63);
+  background-color: $header-background-color;
+  h1, h2 { 
+    color: $header-color; 
+    display: inline-block;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: em(26);
+  }
+  h2 { 
+    font-weight: 300;
+    font-style: italic;
+    font-size: em(18);
+
+  }
+  button {
+    float: right;
+    margin: 10px 0; 
+    @extend %clearfix;
+  }
+ }
+
+nav {
+  height: em(40);
+  border-top: 1px solid fade-out($medium-gray, 0.75);
+  border-bottom: 1px solid fade-out($medium-gray, 0.75);
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    li {
+      display: inline-block;
+      margin-right: em(35);
+      padding: 0.5em 0;
+      &.active {
+        border-bottom: 5px solid $violet;
+      }
+    }
+  }
+  a, a:link {
+    font-weight: 600;
+    color: $navigation-link-color;
+    text-decoration: none;
+  }
+  button {
+    float: right;
+    margin: em(6) 0;
+  }
+  @extend %clearfix;
+}
+
+button {
+  color: $white;
+  font-size: em(16);
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+
+  &.orange {
+    border: 3px solid $light-orange;
+    @include linear-gradient(to top right, $dark-orange, $orange);
+    &:hover {
+      @include linear-gradient(to top right, $orange, $dark-orange);
+    }
+  }
+
+  &.gray {
+    @include linear-gradient(to top right, $dark-gray, lighten($dark-gray, 5%));
+  }
+
+  &.small {
+    border: 0;
+    font-size: em(13);
+    padding: 5px 15px;
+  }
+}
