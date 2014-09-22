@@ -476,3 +476,12 @@ button {
     line-height: 1;
     vertical-align: middle;
     width: 70%; }
+
+.tips-text {
+  padding: 3.75em; }
+  .tips-text h1 {
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #383b69;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #e7e7e7; }
