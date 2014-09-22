@@ -393,8 +393,8 @@ header {
 
 nav {
   height: 2.5em;
-  border-top: 1px solid rgba(122, 122, 122, 0.25);
-  border-bottom: 1px solid rgba(122, 122, 122, 0.25); }
+  border-top: 1px solid rgba(165, 165, 165, 0.25);
+  border-bottom: 1px solid rgba(165, 165, 165, 0.25); }
   nav ul {
     list-style-type: none;
     padding: 0;
@@ -479,10 +479,65 @@ button {
     width: 70%; }
 
 .tips-text {
+  background: white;
   padding: 3.75em; }
   .tips-text h1 {
     font-size: 1.625em;
-    font-weight: 400;
+    font-weight: 600;
     color: #383b69;
     padding: 0 0 20px 0;
     border-bottom: 1px solid #e7e7e7; }
+
+.tips-feature, .tips-navigation {
+  display: inline-block;
+  float: left; }
+
+.tips-feature {
+  width: 39.375em; }
+  .tips-feature h2 {
+    font-size: 2.125em;
+    font-weight: 300;
+    color: #383b69; }
+  .tips-feature img {
+    float: left;
+    margin-right: 30px;
+    box-shadow: 1px 1px 5px rgba(122, 122, 122, 0.95); }
+  .tips-feature p {
+    font-weight: 300; }
+  .tips-feature a, .tips-feature a:link {
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ff7c41;
+    padding: 10px 0; }
+
+.tips-navigation {
+  width: 20.625em; }
+  .tips-navigation ul {
+    list-style-type: none;
+    margin: 2.1875em 0; }
+    .tips-navigation ul li {
+      padding: 0.3125em 0; }
+      .tips-navigation ul li.active {
+        background: #F7F7F7;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7; }
+      .tips-navigation ul li img {
+        margin-right: 10px; }
+      .tips-navigation ul li div {
+        display: inline-block;
+        vertical-align: top;
+        width: 13.4375em; }
+      .tips-navigation ul li span.tips-video-text {
+        display: block;
+        font-size: 0.75em;
+        font-weight: 600;
+        color: #a5a5a5;
+        text-transform: uppercase; }
+      .tips-navigation ul li a, .tips-navigation ul li a:link {
+        font-size: 1em;
+        font-weight: 300;
+        color: #383b69;
+        text-decoration: none; }
