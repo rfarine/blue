@@ -354,7 +354,7 @@ td,
 th {
   padding: 0; }
 
-.row:after, header button:after, nav:after {
+.row:after, header button:after, nav:after, .instructions-detail:after, .instructions-step-bar:after {
   content: "";
   display: table;
   clear: both; }
@@ -585,3 +585,57 @@ button {
           background: white; }
         .instructions-text .instructions-header span a.inactive, .instructions-text .instructions-header span a:link.inactive {
           color: #a5a5a5; }
+
+.slideshow {
+  float: left;
+  margin-right: 30px; }
+  .slideshow img {
+    box-shadow: 1px 1px 5px rgba(122, 122, 122, 0.5); }
+
+.instructions-detail {
+  float: right;
+  width: 23.125em; }
+  .instructions-detail h2 {
+    font-size: 1.25em;
+    font-weight: 300; }
+    .instructions-detail h2 span {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      background: #434d86;
+      border-radius: 3px;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      margin-right: 10px; }
+  .instructions-detail p {
+    font-weight: 300;
+    border-top: 1px solid #e7e7e7;
+    padding: 0.625em 0; }
+    .instructions-detail p a, .instructions-detail p a:link {
+      color: #383b69;
+      text-decoration: none;
+      font-weight: 600; }
+  .instructions-detail button {
+    margin-left: 65px; }
+
+.instructions-step-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .instructions-step-bar li {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 10px;
+    margin-right: 1px;
+    padding: 0;
+    background: rgba(165, 165, 165, 0.5); }
+    .instructions-step-bar li.active {
+      background: #434d86; }
+    .instructions-step-bar li:first-child {
+      border-radius: 5px 0px 0px 5px; }
+    .instructions-step-bar li:last-child {
+      border-radius: 0px 5px 5px 0px; }
