@@ -50,10 +50,25 @@
     margin: em(35) 0;
     li {
       padding: em(5) 0;
+      border-bottom: 1px solid $light-gray;
+      &:first-child { border-top: 1px solid $light-gray; }
+      &:last-child { border-bottom: 0; }
       &.active {
         background: #F7F7F7;
-        border-top: 1px solid $light-gray;
-        border-bottom: 1px solid $light-gray;
+      }
+      &.tips-more {
+        padding: em(10) 0;
+        button { 
+          margin-right: 10px;
+          float: left; 
+        }
+        span {
+          display: inline-block;
+          width: 60%;
+          font-size: em(12);
+          font-weight: 300;
+          vertical-align: middle;
+        }
       }
       img {
         margin-right: 10px;

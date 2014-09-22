@@ -519,11 +519,25 @@ button {
     list-style-type: none;
     margin: 2.1875em 0; }
     .tips-navigation ul li {
-      padding: 0.3125em 0; }
+      padding: 0.3125em 0;
+      border-bottom: 1px solid #e7e7e7; }
+      .tips-navigation ul li:first-child {
+        border-top: 1px solid #e7e7e7; }
+      .tips-navigation ul li:last-child {
+        border-bottom: 0; }
       .tips-navigation ul li.active {
-        background: #F7F7F7;
-        border-top: 1px solid #e7e7e7;
-        border-bottom: 1px solid #e7e7e7; }
+        background: #F7F7F7; }
+      .tips-navigation ul li.tips-more {
+        padding: 0.625em 0; }
+        .tips-navigation ul li.tips-more button {
+          margin-right: 10px;
+          float: left; }
+        .tips-navigation ul li.tips-more span {
+          display: inline-block;
+          width: 60%;
+          font-size: 0.75em;
+          font-weight: 300;
+          vertical-align: middle; }
       .tips-navigation ul li img {
         margin-right: 10px; }
       .tips-navigation ul li div {
