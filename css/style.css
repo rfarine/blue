@@ -451,7 +451,8 @@ button {
 .feature-text {
   background-color: white;
   width: 260px;
-  padding: 1.25em; }
+  padding: 1.25em;
+  box-shadow: 1px 1px 5px rgba(122, 122, 122, 0.55); }
   .feature-text p {
     font-weight: 300;
     margin: 0;

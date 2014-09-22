@@ -13,6 +13,7 @@
   background-color: $feature-text-background-color;
   width: 260px;
   padding: em(20);
+  box-shadow: 1px 1px 5px fade-out($dark-gray, 0.45);
   p {
     font-weight: 300;
     margin: 0;
