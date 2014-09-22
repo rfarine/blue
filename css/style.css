@@ -375,7 +375,7 @@ p {
   font-weight: 400; }
 
 header {
-  height: 63px;
+  height: 3.9375em;
   background-color: white; }
   header h1, header h2 {
     color: #383b69;
@@ -429,15 +429,41 @@ button {
     color: white; }
   button.small {
     font-size: 0.8125em;
-    padding: 5px 10px; }
+    padding: 5px 15px; }
 
 .feature-container {
   background-image: url("../img/feature.jpg");
   background-size: cover;
   background-position: left center;
   min-height: 530px;
-  padding: 2em 0; }
+  padding: 2em 0;
+  box-shadow: inset 0 0 10px rgba(122, 122, 122, 0.55); }
 
 .feature-text {
   background-color: white;
-  width: 300px; }
+  width: 260px;
+  padding: 1.25em; }
+  .feature-text p {
+    font-weight: 300;
+    margin: 0;
+    padding: 0 0 1.25em 0; }
+  .feature-text strong {
+    color: #434d86;
+    margin-right: 5px; }
+
+.feature-actions {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .feature-actions li {
+    padding: 0.3125em 0; }
+  .feature-actions button, .feature-actions span {
+    display: inline-block; }
+  .feature-actions button {
+    margin-right: 10px; }
+  .feature-actions span {
+    font-size: 0.75em;
+    font-weight: 300;
+    line-height: 1;
+    vertical-align: middle;
+    width: 70%; }
