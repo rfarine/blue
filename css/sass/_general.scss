@@ -37,12 +37,12 @@
   }
   h1 {
     font-weight: 600;
-    font-size: 26px;
+    font-size: em(26);
   }
   h2 { 
     font-weight: 300;
     font-style: italic;
-    font-size: 20px;
+    font-size: em(18);
 
   }
   button {
@@ -53,24 +53,37 @@
  }
 
 nav {
+  height: em(40);
   border-top: 1px solid $medium-gray;
   border-bottom: 1px solid $medium-gray;
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     float: left;
     li {
       display: inline-block;
+      margin-right: em(35);
+      padding: 0.5em 0;
+      &.active {
+        border-bottom: 5px solid $violet;
+      }
     }
+  }
+  a, a:link {
+    font-weight: 600;
+    color: $navigation-link-color;
+    text-decoration: none;
   }
   button {
     float: right;
+    margin: em(6) 0;
   }
   @extend %clearfix;
 }
 
 button {
-  font-size: 16px;
+  font-size: em(16);
   font-weight: 300;
   text-transform: uppercase;
   border: 0;
@@ -88,7 +101,7 @@ button {
   }
 
   &.small {
-    font-size: 14px;
+    font-size: em(13);
     padding: 5px 10px;
   }
 }

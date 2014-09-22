@@ -382,29 +382,40 @@ header {
     display: inline-block; }
   header h1 {
     font-weight: 600;
-    font-size: 26px; }
+    font-size: 1.625em; }
   header h2 {
     font-weight: 300;
     font-style: italic;
-    font-size: 20px; }
+    font-size: 1.125em; }
   header button {
     float: right;
     margin: 10px 0; }
 
 nav {
+  height: 2.5em;
   border-top: 1px solid rgba(122, 122, 122, 0.25);
   border-bottom: 1px solid rgba(122, 122, 122, 0.25); }
   nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     float: left; }
     nav ul li {
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 2.1875em;
+      padding: 0.5em 0; }
+      nav ul li.active {
+        border-bottom: 5px solid #383b69; }
+  nav a, nav a:link {
+    font-weight: 600;
+    color: #383b69;
+    text-decoration: none; }
   nav button {
-    float: right; }
+    float: right;
+    margin: 0.375em 0; }
 
 button {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
   text-transform: uppercase;
   border: 0;
@@ -417,14 +428,15 @@ button {
     background: #7a7a7a;
     color: white; }
   button.small {
-    font-size: 14px;
+    font-size: 0.8125em;
     padding: 5px 10px; }
 
 .feature-container {
   background-image: url("../img/feature.jpg");
   background-size: cover;
   background-position: left center;
-  min-height: 530px; }
+  min-height: 530px;
+  padding: 2em 0; }
 
 .feature-text {
   background-color: white;
