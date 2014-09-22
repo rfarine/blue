@@ -478,8 +478,10 @@ button {
     vertical-align: middle;
     width: 70%; }
 
+.tips-container {
+  background-color: white; }
+
 .tips-text {
-  background: white;
   padding: 3.75em; }
   .tips-text h1 {
     font-size: 1.625em;
