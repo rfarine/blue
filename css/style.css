@@ -425,3 +425,7 @@ button {
   background-size: cover;
   background-position: left center;
   min-height: 530px; }
+
+.feature-text {
+  background-color: white;
+  width: 300px; }
