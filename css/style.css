@@ -415,6 +415,7 @@ nav {
     margin: 0.375em 0; }
 
 button {
+  color: white;
   font-size: 1em;
   font-weight: 300;
   text-transform: uppercase;
@@ -422,12 +423,20 @@ button {
   border-radius: 5px;
   padding: 10px 20px; }
   button.orange {
-    background: #da6b3b;
-    color: white; }
+    border: 3px solid #fcad67;
+    background-color: #da6b3b;
+    background-image: -webkit-linear-gradient(bottom left, #da6b3b, #ff7c41);
+    background-image: linear-gradient(to top right,#da6b3b, #ff7c41); }
+    button.orange:hover {
+      background-color: #ff7c41;
+      background-image: -webkit-linear-gradient(bottom left, #ff7c41, #da6b3b);
+      background-image: linear-gradient(to top right,#ff7c41, #da6b3b); }
   button.gray {
-    background: #7a7a7a;
-    color: white; }
+    background-color: #7a7a7a;
+    background-image: -webkit-linear-gradient(bottom left, #7a7a7a, #878787);
+    background-image: linear-gradient(to top right,#7a7a7a, #878787); }
   button.small {
+    border: 0;
     font-size: 0.8125em;
     padding: 5px 15px; }
 

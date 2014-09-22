@@ -83,6 +83,7 @@ nav {
 }
 
 button {
+  color: $white;
   font-size: em(16);
   font-weight: 300;
   text-transform: uppercase;
@@ -91,16 +92,19 @@ button {
   padding: 10px 20px;
 
   &.orange {
-    background: $orange;
-    color: $white;
+    border: 3px solid $light-orange;
+    @include linear-gradient(to top right, $dark-orange, $orange);
+    &:hover {
+      @include linear-gradient(to top right, $orange, $dark-orange);
+    }
   }
 
   &.gray {
-    background: $dark-gray;
-    color: $white;
+    @include linear-gradient(to top right, $dark-gray, lighten($dark-gray, 5%));
   }
 
   &.small {
+    border: 0;
     font-size: em(13);
     padding: 5px 15px;
   }
