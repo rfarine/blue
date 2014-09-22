@@ -555,3 +555,33 @@ button {
         font-weight: 300;
         color: #383b69;
         text-decoration: none; }
+
+.instructions-text {
+  padding: 3.75em; }
+  .instructions-text .instructions-header {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 0 1.25em 0;
+    margin: 0 0 1.25em 0; }
+    .instructions-text .instructions-header h1 {
+      display: inline;
+      font-size: 1.625em;
+      font-weight: 600;
+      color: #383b69; }
+    .instructions-text .instructions-header span {
+      float: right;
+      border: 1px solid #e7e7e7; }
+      .instructions-text .instructions-header span a, .instructions-text .instructions-header span a:link {
+        display: inline-block;
+        font-size: 1em;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 10px; }
+        .instructions-text .instructions-header span a:first-child, .instructions-text .instructions-header span a:link:first-child {
+          float: left;
+          border-right: 1px solid #e7e7e7; }
+        .instructions-text .instructions-header span a.active, .instructions-text .instructions-header span a:link.active {
+          color: #383b69;
+          background: white; }
+        .instructions-text .instructions-header span a.inactive, .instructions-text .instructions-header span a:link.inactive {
+          color: #a5a5a5; }

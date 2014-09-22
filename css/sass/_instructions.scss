@@ -1,0 +1,40 @@
+// Instructions
+
+.instructions-text {
+  padding: em(60);
+
+  .instructions-header {
+    border-bottom: 1px solid $light-gray;
+    padding: 0 0 em(20) 0;
+    margin: 0 0 em(20) 0;
+    h1 {
+      display: inline;
+      font-size: em(26);
+      font-weight: 600;
+      color: $header-color;    
+    }
+    span {
+      float: right;
+      border: 1px solid $light-gray;
+      a, a:link {
+        display: inline-block;
+        font-size: em(16);
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 10px;
+        &:first-child {
+          float: left;
+          border-right: 1px solid $light-gray;
+        }
+        &.active {
+          color: $violet;
+          background: $white;
+        }
+        &.inactive {
+          color: $medium-gray;
+        }
+      }
+    }
+  }
+}
